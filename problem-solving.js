@@ -21,3 +21,22 @@ function onlyPositive(numbers) {
 }
 const positiveOutput = onlyPositive(arraryNumbers);
 console.log(positiveOutput);
+
+//Problem - 4
+/*
+ একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে। 
+ */
+function bestFriend(name) {
+    let bigName = friendName[0];
+    for (let i = 0; i < friendName.length; i++) {
+        const friendsName = friendName[i];
+        if (friendsName > friendName) {
+            bigName = friendsName;
+        }
+    }
+    return bigName;
+
+}
+const friendName = ['Sojib', 'Alamin', 'Imran', 'Tuhin', 'Hridoy', 'Abu Nahid', 'Alfaz Uddin', 'Shafiq Ahmed Bhuiyan'];
+const largeNameFriend = bestFriend(friendName);
+console.log(largeNameFriend);
