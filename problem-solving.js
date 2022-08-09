@@ -95,3 +95,6 @@ function feetToInch(feet) {
 let feets = 1241;
 const convertedInche = feetToInch(feets);
 console.log('Converted Result:', convertedInche, 'Inches.');
+
+// It was my self problem solving journey[09.08.22]
+// Thank You.
