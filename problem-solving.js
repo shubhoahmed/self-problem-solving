@@ -40,3 +40,34 @@ function bestFriend(name) {
 const friendName = ['Sojib', 'Alamin', 'Imran', 'Tuhin', 'Hridoy', 'Abu Nahid', 'Alfaz Uddin', 'Shafiq Ahmed Bhuiyan'];
 const largeNameFriend = bestFriend(friendName);
 console.log(largeNameFriend);
+
+//Problem - 3
+/*
+ ৩. আরেকটা ফাংশন লিখবে যেটার নাম লিখবে। যেই ফাংশনের নাম হবে paperRequirements এই ফাংশনের প্যারামিটার হিসেবে তিনটা প্যারামিটার হবে। প্রথম প্যারামিটার হবে তুমি প্রথম বই কত কপি ছাপাতে চাও। সেকেন্ড প্যারামিটার হবে তুমি সেকেন্ড বই কত কপি ছাপাতে চাও। আর থার্ড প্যারামিটার হবে তুমি থার্ড বই কত কপি ছাপাতে চাও। অর্থাৎ কোন বই এর কত কপি ছাপানো হবে সেটাই প্যারামিটার হিসেবে নিবে। 
+
+এইবার ভালো করে খেয়াল করো। 
+
+প্রথম বই ছাপানোর জন্য পৃষ্ঠা লাগবে ১০০ টা 
+সেকেন্ড বই ছাপানোর জন্য পৃষ্ঠা লাগবে ২০০ টা 
+তৃতীয় বই ছাপানোর জন্য পৃষ্ঠা লাগবে ৩০০ টা 
+
+এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে। 
+
+উত্তর হিসেবে সংখ্যা রিটার্ন করবে।  
+ */
+function pageRequirments(firstBook, secondBook, thirdBook) {
+
+    const firstBookPage = 100;
+    const secondBookPage = 200;
+    const thirdBookPage = 300;
+
+    const firstBookPageQuantity = firstBookPage * firstBook;
+    const secondBookPageQuantity = secondBookPage * secondBook;
+    const thirdBookPageQuantity = thirdBookPage * thirdBook;
+
+    totalPage = firstBookPageQuantity + secondBookPageQuantity + thirdBookPageQuantity;
+
+    return totalPage;
+}
+const result = pageRequirments(4, 8, 5);
+console.log('Total Page Requirments is:', result);
