@@ -70,4 +70,28 @@ function pageRequirments(firstBook, secondBook, thirdBook) {
     return totalPage;
 }
 const result = pageRequirments(4, 8, 5);
-console.log('Total Page Requirments is:', result);
+console.log('Total Page Requirments is:', result, 'pages.');
+
+//Problem-2
+/*
+একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে। 
+*/
+function centimeterToMeter(centimeters) {
+    const meter = centimeters / 100;
+    return meter;
+}
+let centimeter = 500;
+const convertedMeter = centimeterToMeter(centimeter);
+console.log('Converted Result:', convertedMeter, 'Meter.');
+
+//Problem-1
+/*
+সিম্পল একটা ফাংশন লিখতে হবে। যেটার নাম হবে feetToInch এবং এই ফাংশন ইনপুট হিসেবে নিবে feet আর রিটার্ন করবে inch । অর্থাৎ এই ফাংশনকে কোন একটা ফিট বলে দিলে সে রিটার্ন হিসেবে বলে দিবে কত ইঞ্চি হয়। 
+*/
+function feetToInch(feet) {
+    const inche = feet * 12;
+    return inche;
+}
+let feets = 1241;
+const convertedInche = feetToInch(feets);
+console.log('Converted Result:', convertedInche, 'Inches.');
